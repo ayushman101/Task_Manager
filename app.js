@@ -12,7 +12,7 @@ const app= express()
 
 
 //Serve the React Frontend build
-app.use(express.static("./client"))
+app.use(express.static("./build"))
 
 app.use(express.json());        // without this the incoming request will be undefined 
 app.use(cors());
